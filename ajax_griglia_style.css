@@ -14,6 +14,9 @@
   padding: 10px;
 }
 .quadratino{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 100px;
   width: 100px;
   background: white;
@@ -24,4 +27,7 @@
 }
 .verde{
   background-color: green;
+}
+.scritta{
+  z-index: 0;
 }

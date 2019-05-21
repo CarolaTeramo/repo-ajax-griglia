@@ -2,7 +2,7 @@ $(document).ready(function(){
 
   // genero griglia quadratini
   for (var i = 0; i < 35; i++) {
-    $('.griglia').append('<div class="quadratino"></div>')
+    $('.griglia').append('<div class="quadratino"></div>');
   }
 
   $('.quadratino').click(function(){
@@ -26,12 +26,13 @@ $(document).ready(function(){
       if (numero <= 5 ){
         //alert('ok')
         questo.addClass('giallo');
+        questo.append('<div class="scritta"></div>').text(numero);
+        //questo.children('.scritta').text(numero)
       } else {
         questo.addClass('verde');
+        questo.append('<div class="scritta"></div>').text(numero);
       }
     }
-
-
 
 
   });
