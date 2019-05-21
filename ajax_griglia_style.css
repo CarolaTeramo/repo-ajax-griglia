@@ -1,0 +1,27 @@
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1000px;
+}
+.griglia{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 800px;
+  width: 800px;
+  background-color: lightblue;
+  padding: 10px;
+}
+.quadratino{
+  height: 100px;
+  width: 100px;
+  background: white;
+  margin: 10px;
+}
+.giallo{
+  background-color: yellow;
+}
+.verde{
+  background-color: green;
+}
