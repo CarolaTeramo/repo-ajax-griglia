@@ -5,38 +5,42 @@ $(document).ready(function(){
     $('.griglia').append('<div class="quadratino"></div>')
   }
 
-
   $('.quadratino').click(function(){
-
+    var questo = $(this);
     $.ajax({
       'url': 'https://www.boolean.careers/api/random/int',
       'method': 'GET',
       'success': function(data){
-        output (data);
+        output(data);
         console.log(data);
       },
       'error': function(){
 
       }
     });
-
     function output(info){
       // info= generica variabile a cui sopra do valore data
       var numero = info.response;
       console.log(numero);
-      return numero
+      console.log(questo);
+      if (numero <= 5 ){
+        //alert('ok')
+        questo.addClass('giallo');
+      } else {
+        questo.addClass('verde');
+      }
     }
-    
-    // if (numero < 5 ){
-    //   alert('ok')
-    //   $(this).addClass('giallo');
-    // } else {
-    //   alert('no')
-    //   $(this).addClass('verde');
-    // }
+
+
 
 
   });
+
+
+
+
+
+
 
 
 
